@@ -56,11 +56,13 @@ int main()
 
             break;
         case 4:
+            free(sptr);
             exit(0);
         default:
             printf("Invalid Choice...\n");
         }
     }
+    free(sptr);
     return 0;
 }
 void getData(Student *s)
